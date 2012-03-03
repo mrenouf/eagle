@@ -1,0 +1,24 @@
+[Eagle]
+Version="05 08 00"
+Platform="Linux"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/home/mark/Dropbox/Eagle/Libraries/led-stuff.lbr"
+UsedLibrary="/home/mark/Dropbox/Eagle/Libraries/untitled.lbr"
+UsedLibrary="/home/mark/Dropbox/Eagle/Libraries/Common/SparkFun.lbr"
+UsedLibrary="Atari.lbr"
+UsedLibrary="/home/mark/Dropbox/Eagle/Libraries/Common/pinhead.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="753 62 1388 579"
+State=2
+Number=0
+
+[Desktop]
+Screen="1680 1050"
+Window="Win_1"

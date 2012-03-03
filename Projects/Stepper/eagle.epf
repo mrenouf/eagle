@@ -1,0 +1,29 @@
+[Eagle]
+Version="05 06 00"
+Platform="Linux"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/home/mark/Dropbox/Eagle/Libraries/led-stuff.lbr"
+UsedLibrary="/home/mark/Dropbox/Eagle/Libraries/transistors.lbr"
+UsedLibrary="/home/mark/Dropbox/Eagle/Libraries/Common/SparkFun.lbr"
+UsedLibrary="/home/mark/Dropbox/Eagle/Libraries/Common/maxim.lbr"
+UsedLibrary="/home/mark/Dropbox/Eagle/Libraries/Common/pinhead.lbr"
+UsedLibrary="/home/mark/Dropbox/Eagle/Libraries/Common/rc-master.lbr"
+UsedLibrary="/home/mark/Dropbox/Eagle/Libraries/Common/led.lbr"
+UsedLibrary="/home/mark/Dropbox/Eagle/Libraries/Common/matrix.lbr"
+UsedLibrary="/home/mark/Dropbox/Eagle/Libraries/Misc/transistor-fet.lbr"
+UsedLibrary="/home/mark/Dropbox/Eagle/Projects/Stella/Atari.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="78 188 713 705"
+State=1
+Number=0
+
+[Desktop]
+Screen="1680 1050"
+Window="Win_1"

@@ -1,0 +1,29 @@
+[Eagle]
+Version="05 06 00"
+Platform="Linux"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/home/mark/Eagle/Libraries/custom-packages.lbr"
+UsedLibrary="/home/mark/Eagle/Libraries/maxim.lbr"
+UsedLibrary="/home/mark/Eagle/Libraries/Common/SparkFun.lbr"
+UsedLibrary="/home/mark/Eagle/Libraries/Common/pinhead.lbr"
+
+[Win_1]
+Loc="0 0 599 399"
+State=2
+Number=3
+
+[Win_2]
+Type="Control Panel"
+Loc="1684 45 3176 584"
+State=2
+Number=0
+
+[Desktop]
+Screen="3600 1200"
+Window="Win_1"
+Window="Win_2"
