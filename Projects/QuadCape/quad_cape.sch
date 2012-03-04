@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -1233,55 +1233,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-6.35" y1="5.715" x2="-6.35" y2="6.985" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="6.985" x2="-5.715" y2="7.62" width="0.127" layer="21"/>
 </package>
-</packages>
-<symbols>
-<symbol name="LS20031_GPS">
-<description>66 Channel LS20031 GPS 5Hz Receiver</description>
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<pin name="VCC" x="-12.7" y="7.62" length="short" direction="pwr"/>
-<pin name="RX" x="-12.7" y="2.54" length="short" direction="in"/>
-<pin name="TX" x="-12.7" y="0" length="short" direction="out"/>
-<pin name="GND$1" x="-12.7" y="-5.08" length="short" direction="pwr"/>
-<pin name="GND$2" x="-12.7" y="-7.62" length="short" direction="pwr"/>
-<text x="-10.16" y="10.668" size="1.778" layer="94">&gt;NAME</text>
-<text x="-10.16" y="-12.192" size="1.27" layer="94">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LS20031">
-<description>66 Channel LS20031 GPS 5Hz Receiver</description>
-<gates>
-<gate name="G$1" symbol="LS20031_GPS" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="LS20031">
-<connects>
-<connect gate="G$1" pin="GND$1" pad="4"/>
-<connect gate="G$1" pin="GND$2" pad="5"/>
-<connect gate="G$1" pin="RX" pad="2"/>
-<connect gate="G$1" pin="TX" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="SparkFun-DigitalIC">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find all manner of digital ICs- microcontrollers, memory chips, logic chips, FPGAs, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
 <package name="TQFP32-08">
-<description>&lt;B&gt;Thin Plasic Quad Flat Package&lt;/B&gt; Grid 0.8 mm</description>
 <wire x1="3.505" y1="3.505" x2="3.505" y2="-3.505" width="0.1524" layer="21"/>
 <wire x1="3.505" y1="-3.505" x2="-3.505" y2="-3.505" width="0.1524" layer="21"/>
 <wire x1="-3.505" y1="-3.505" x2="-3.505" y2="3.15" width="0.1524" layer="21"/>
@@ -1320,8 +1272,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="30" x="-1.2" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
 <smd name="31" x="-2" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
 <smd name="32" x="-2.8" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
-<text x="-3.175" y="5.08" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-6.35" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="-2.7686" y="5.08" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-3.0226" y="-1.27" size="0.8128" layer="27">&gt;VALUE</text>
 <rectangle x1="-4.5466" y1="2.5714" x2="-3.556" y2="3.0286" layer="51"/>
 <rectangle x1="-4.5466" y1="1.7714" x2="-3.556" y2="2.2286" layer="51"/>
 <rectangle x1="-4.5466" y1="0.9714" x2="-3.556" y2="1.4286" layer="51"/>
@@ -1357,88 +1309,121 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 </packages>
 <symbols>
-<symbol name="ATMEGA8U2">
-<wire x1="-15.24" y1="30.48" x2="-15.24" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-30.48" x2="15.24" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-30.48" x2="15.24" y2="30.48" width="0.254" layer="94"/>
-<wire x1="15.24" y1="30.48" x2="-15.24" y2="30.48" width="0.254" layer="94"/>
-<text x="-15.24" y="30.48" size="1.778" layer="95">&gt;NAME</text>
-<text x="-15.24" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="AVCC" x="-20.32" y="20.32" length="middle"/>
-<pin name="D+" x="-20.32" y="10.16" length="middle"/>
-<pin name="D-" x="-20.32" y="7.62" length="middle"/>
-<pin name="GND" x="-20.32" y="-27.94" length="middle"/>
-<pin name="PB0" x="20.32" y="27.94" length="middle" rot="R180"/>
-<pin name="PB1(SCK)" x="20.32" y="25.4" length="middle" rot="R180"/>
-<pin name="PB2(MOSI)" x="20.32" y="22.86" length="middle" rot="R180"/>
-<pin name="PB3(MISO)" x="20.32" y="20.32" length="middle" rot="R180"/>
-<pin name="PB4" x="20.32" y="17.78" length="middle" rot="R180"/>
-<pin name="PB5" x="20.32" y="15.24" length="middle" rot="R180"/>
-<pin name="PB6" x="20.32" y="12.7" length="middle" rot="R180"/>
-<pin name="PB7" x="20.32" y="10.16" length="middle" rot="R180"/>
-<pin name="PC2" x="20.32" y="5.08" length="middle" rot="R180"/>
-<pin name="PC4" x="20.32" y="2.54" length="middle" rot="R180"/>
-<pin name="PC5" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="PC6" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="PC7" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="PD0" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="PD1" x="20.32" y="-12.7" length="middle" rot="R180"/>
-<pin name="PD2(RX)" x="20.32" y="-15.24" length="middle" rot="R180"/>
-<pin name="PD3(TX)" x="20.32" y="-17.78" length="middle" rot="R180"/>
-<pin name="PD4" x="20.32" y="-20.32" length="middle" rot="R180"/>
-<pin name="PD5" x="20.32" y="-22.86" length="middle" rot="R180"/>
-<pin name="PD6(RTS)" x="20.32" y="-25.4" length="middle" rot="R180"/>
-<pin name="PD7(CTS)" x="20.32" y="-27.94" length="middle" rot="R180"/>
-<pin name="RESET/PC1" x="-20.32" y="27.94" length="middle"/>
-<pin name="UCAP" x="-20.32" y="-20.32" length="middle"/>
-<pin name="UGND" x="-20.32" y="-25.4" length="middle"/>
-<pin name="UVCC" x="-20.32" y="12.7" length="middle"/>
-<pin name="VCC" x="-20.32" y="22.86" length="middle"/>
-<pin name="XTAL1" x="-20.32" y="0" length="middle"/>
-<pin name="XTAL2/PC0" x="-20.32" y="-10.16" length="middle"/>
+<symbol name="LS20031_GPS">
+<description>66 Channel LS20031 GPS 5Hz Receiver</description>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="VCC" x="-12.7" y="7.62" length="short" direction="pwr"/>
+<pin name="RX" x="-12.7" y="2.54" length="short" direction="in"/>
+<pin name="TX" x="-12.7" y="0" length="short" direction="out"/>
+<pin name="GND$1" x="-12.7" y="-5.08" length="short" direction="pwr"/>
+<pin name="GND$2" x="-12.7" y="-7.62" length="short" direction="pwr"/>
+<text x="-10.16" y="10.668" size="1.778" layer="94">&gt;NAME</text>
+<text x="-10.16" y="-12.192" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="ATMEGA328P-AU">
+<wire x1="29.21" y1="36.83" x2="29.21" y2="-30.48" width="0.4064" layer="94"/>
+<wire x1="29.21" y1="-30.48" x2="-33.02" y2="-30.48" width="0.4064" layer="94"/>
+<wire x1="-33.02" y1="-30.48" x2="-33.02" y2="36.83" width="0.4064" layer="94"/>
+<wire x1="-33.02" y1="36.83" x2="29.21" y2="36.83" width="0.4064" layer="94"/>
+<pin name="PD3_(PCINT19/OC2B/INT1)" x="34.29" y="10.16" length="middle" rot="R180"/>
+<pin name="PD4_(PCINT20/XCK/T0)" x="34.29" y="12.7" length="middle" rot="R180"/>
+<pin name="GND$1" x="-8.89" y="-35.56" length="middle" rot="R90"/>
+<pin name="VCC$1" x="-7.62" y="41.91" length="middle" rot="R270"/>
+<pin name="GND$2" x="-6.35" y="-35.56" length="middle" rot="R90"/>
+<pin name="VCC$2" x="-5.08" y="41.91" length="middle" rot="R270"/>
+<pin name="PB6_(PCINT6/XTAL1/TOSC1)" x="-38.1" y="5.08" length="middle"/>
+<pin name="PB7_(PCINT7/XTAL2/TOSC2)" x="-38.1" y="2.54" length="middle"/>
+<pin name="PD5_(PCINT21/OC0B/T1)" x="34.29" y="15.24" length="middle" rot="R180"/>
+<pin name="PD6_(PCINT22/OC0A/AIN0)" x="34.29" y="17.78" length="middle" rot="R180"/>
+<pin name="PD7_(PCINT23/AIN1)" x="34.29" y="20.32" length="middle" rot="R180"/>
+<pin name="PB0_(PCINT0/CLK0/ICP1)" x="-38.1" y="20.32" length="middle"/>
+<pin name="PB3_(PCINT3/OC2A/MOSI)" x="-38.1" y="12.7" length="middle"/>
+<pin name="PB4_(PCINT4/MISO)" x="-38.1" y="10.16" length="middle"/>
+<pin name="PB1_(PCINT1/OC1A)" x="-38.1" y="17.78" length="middle"/>
+<pin name="PB2_(PCINT2/SS/OC1B)" x="-38.1" y="15.24" length="middle"/>
+<pin name="PB5_(SCK/PCINT5)" x="-38.1" y="7.62" length="middle"/>
+<pin name="AVCC" x="3.81" y="41.91" length="middle" rot="R270"/>
+<pin name="ADC6" x="-38.1" y="-24.13" length="middle"/>
+<pin name="AREF" x="6.35" y="41.91" length="middle" rot="R270"/>
+<pin name="GND$3" x="-3.81" y="-35.56" length="middle" rot="R90"/>
+<pin name="PC0_(ADC0/PCINT8)" x="-38.1" y="-2.54" length="middle"/>
+<pin name="PC1_(ADC1/PCINT9)" x="-38.1" y="-5.08" length="middle"/>
+<pin name="ADC7" x="-38.1" y="-26.67" length="middle"/>
+<pin name="PC2_(ADC2/PCINT10)" x="-38.1" y="-7.62" length="middle"/>
+<pin name="PC3_(ADC3/PCINT11)" x="-38.1" y="-10.16" length="middle"/>
+<pin name="PC4_(ADC4/SDA/PCINT12)" x="-38.1" y="-12.7" length="middle"/>
+<pin name="PC5_(ADC5/SCL/PCINT13)" x="-38.1" y="-15.24" length="middle"/>
+<pin name="PC6_(RESET/PCINT14)" x="-38.1" y="-17.78" length="middle"/>
+<pin name="PD0_(RXD/PCINT16)" x="34.29" y="2.54" length="middle" rot="R180"/>
+<pin name="PD1_(TXD/PCINT17)" x="34.29" y="5.08" length="middle" rot="R180"/>
+<pin name="PD2_(INT0/PCINT18)" x="34.29" y="7.62" length="middle" rot="R180"/>
+<text x="-33.02" y="38.1" size="1.778" layer="94">&gt;NAME</text>
+<text x="-33.02" y="-33.02" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ATMEGA8U2" prefix="U">
-<description>Atmel 32-pin 8-bit Microcontroller with 8/16/32K Bystes of ISP Flash and USB Controller. ATmega8U2, ATmega16U2, and ATmega32U2</description>
+<deviceset name="LS20031">
+<description>66 Channel LS20031 GPS 5Hz Receiver</description>
 <gates>
-<gate name="G$1" symbol="ATMEGA8U2" x="0" y="0"/>
+<gate name="G$1" symbol="LS20031_GPS" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="AU" package="TQFP32-08">
+<device name="" package="LS20031">
 <connects>
-<connect gate="G$1" pin="AVCC" pad="32"/>
-<connect gate="G$1" pin="D+" pad="29"/>
-<connect gate="G$1" pin="D-" pad="30"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="PB0" pad="14"/>
-<connect gate="G$1" pin="PB1(SCK)" pad="15"/>
-<connect gate="G$1" pin="PB2(MOSI)" pad="16"/>
-<connect gate="G$1" pin="PB3(MISO)" pad="17"/>
-<connect gate="G$1" pin="PB4" pad="18"/>
-<connect gate="G$1" pin="PB5" pad="19"/>
-<connect gate="G$1" pin="PB6" pad="20"/>
-<connect gate="G$1" pin="PB7" pad="21"/>
-<connect gate="G$1" pin="PC2" pad="5"/>
-<connect gate="G$1" pin="PC4" pad="26"/>
-<connect gate="G$1" pin="PC5" pad="25"/>
-<connect gate="G$1" pin="PC6" pad="23"/>
-<connect gate="G$1" pin="PC7" pad="22"/>
-<connect gate="G$1" pin="PD0" pad="6"/>
-<connect gate="G$1" pin="PD1" pad="7"/>
-<connect gate="G$1" pin="PD2(RX)" pad="8"/>
-<connect gate="G$1" pin="PD3(TX)" pad="9"/>
-<connect gate="G$1" pin="PD4" pad="10"/>
-<connect gate="G$1" pin="PD5" pad="11"/>
-<connect gate="G$1" pin="PD6(RTS)" pad="12"/>
-<connect gate="G$1" pin="PD7(CTS)" pad="13"/>
-<connect gate="G$1" pin="RESET/PC1" pad="24"/>
-<connect gate="G$1" pin="UCAP" pad="27"/>
-<connect gate="G$1" pin="UGND" pad="28"/>
-<connect gate="G$1" pin="UVCC" pad="31"/>
-<connect gate="G$1" pin="VCC" pad="4"/>
-<connect gate="G$1" pin="XTAL1" pad="1"/>
-<connect gate="G$1" pin="XTAL2/PC0" pad="2"/>
+<connect gate="G$1" pin="GND$1" pad="4"/>
+<connect gate="G$1" pin="GND$2" pad="5"/>
+<connect gate="G$1" pin="RX" pad="2"/>
+<connect gate="G$1" pin="TX" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATMEGA328P-AU">
+<gates>
+<gate name="G$1" symbol="ATMEGA328P-AU" x="-1.27" y="-3.81"/>
+</gates>
+<devices>
+<device name="" package="TQFP32-08">
+<connects>
+<connect gate="G$1" pin="ADC6" pad="19"/>
+<connect gate="G$1" pin="ADC7" pad="22"/>
+<connect gate="G$1" pin="AREF" pad="20"/>
+<connect gate="G$1" pin="AVCC" pad="18"/>
+<connect gate="G$1" pin="GND$1" pad="3"/>
+<connect gate="G$1" pin="GND$2" pad="5"/>
+<connect gate="G$1" pin="GND$3" pad="21"/>
+<connect gate="G$1" pin="PB0_(PCINT0/CLK0/ICP1)" pad="12"/>
+<connect gate="G$1" pin="PB1_(PCINT1/OC1A)" pad="13"/>
+<connect gate="G$1" pin="PB2_(PCINT2/SS/OC1B)" pad="14"/>
+<connect gate="G$1" pin="PB3_(PCINT3/OC2A/MOSI)" pad="15"/>
+<connect gate="G$1" pin="PB4_(PCINT4/MISO)" pad="16"/>
+<connect gate="G$1" pin="PB5_(SCK/PCINT5)" pad="17"/>
+<connect gate="G$1" pin="PB6_(PCINT6/XTAL1/TOSC1)" pad="7"/>
+<connect gate="G$1" pin="PB7_(PCINT7/XTAL2/TOSC2)" pad="8"/>
+<connect gate="G$1" pin="PC0_(ADC0/PCINT8)" pad="23"/>
+<connect gate="G$1" pin="PC1_(ADC1/PCINT9)" pad="24"/>
+<connect gate="G$1" pin="PC2_(ADC2/PCINT10)" pad="25"/>
+<connect gate="G$1" pin="PC3_(ADC3/PCINT11)" pad="26"/>
+<connect gate="G$1" pin="PC4_(ADC4/SDA/PCINT12)" pad="27"/>
+<connect gate="G$1" pin="PC5_(ADC5/SCL/PCINT13)" pad="28"/>
+<connect gate="G$1" pin="PC6_(RESET/PCINT14)" pad="29"/>
+<connect gate="G$1" pin="PD0_(RXD/PCINT16)" pad="30"/>
+<connect gate="G$1" pin="PD1_(TXD/PCINT17)" pad="31"/>
+<connect gate="G$1" pin="PD2_(INT0/PCINT18)" pad="32"/>
+<connect gate="G$1" pin="PD3_(PCINT19/OC2B/INT1)" pad="1"/>
+<connect gate="G$1" pin="PD4_(PCINT20/XCK/T0)" pad="2"/>
+<connect gate="G$1" pin="PD5_(PCINT21/OC0B/T1)" pad="9"/>
+<connect gate="G$1" pin="PD6_(PCINT22/OC0A/AIN0)" pad="10"/>
+<connect gate="G$1" pin="PD7_(PCINT23/AIN1)" pad="11"/>
+<connect gate="G$1" pin="VCC$1" pad="4"/>
+<connect gate="G$1" pin="VCC$2" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1466,26 +1451,124 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="JP2" library="adafruit" deviceset="PINHD-1X3" device=""/>
 <part name="JP3" library="adafruit" deviceset="PINHD-1X3" device=""/>
 <part name="JP4" library="adafruit" deviceset="PINHD-1X3" device=""/>
-<part name="U4" library="SparkFun-DigitalIC" deviceset="ATMEGA8U2" device="AU"/>
+<part name="U$2" library="custom" deviceset="ATMEGA328P-AU" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="17.78" y="30.48"/>
-<instance part="U1" gate="G$1" x="71.12" y="66.04"/>
-<instance part="U2" gate="G$1" x="73.66" y="27.94"/>
-<instance part="U3" gate="G$1" x="106.68" y="66.04"/>
-<instance part="JP1" gate="A" x="58.42" y="2.54"/>
-<instance part="JP2" gate="A" x="68.58" y="2.54"/>
-<instance part="JP3" gate="A" x="78.74" y="2.54"/>
-<instance part="JP4" gate="A" x="88.9" y="2.54"/>
-<instance part="U4" gate="G$1" x="121.92" y="12.7"/>
+<instance part="U$1" gate="G$1" x="-13.97" y="24.13"/>
+<instance part="U1" gate="G$1" x="142.24" y="81.28"/>
+<instance part="U2" gate="G$1" x="83.82" y="81.28"/>
+<instance part="U3" gate="G$1" x="204.47" y="73.66"/>
+<instance part="JP1" gate="A" x="207.01" y="-5.08"/>
+<instance part="JP2" gate="A" x="207.01" y="12.7"/>
+<instance part="JP3" gate="A" x="207.01" y="31.75"/>
+<instance part="JP4" gate="A" x="207.01" y="49.53"/>
+<instance part="U$2" gate="G$1" x="134.62" y="5.08"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="TX"/>
+<wire x1="191.77" y1="73.66" x2="181.61" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="181.61" y1="73.66" x2="181.61" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="PD0_(RXD/PCINT16)"/>
+<wire x1="181.61" y1="7.62" x2="168.91" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="RX"/>
+<wire x1="191.77" y1="76.2" x2="180.34" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="76.2" x2="180.34" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="PD1_(TXD/PCINT17)"/>
+<wire x1="180.34" y1="10.16" x2="168.91" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="SPI1_DO"/>
+<wire x1="-41.91" y1="-16.51" x2="-58.42" y2="-16.51" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="-16.51" x2="-58.42" y2="-52.07" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="-52.07" x2="82.55" y2="-52.07" width="0.1524" layer="91"/>
+<wire x1="82.55" y1="-52.07" x2="82.55" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="PB4_(PCINT4/MISO)"/>
+<wire x1="82.55" y1="15.24" x2="96.52" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="SPI1_DI"/>
+<wire x1="13.97" y1="-16.51" x2="80.01" y2="-16.51" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="PB3_(PCINT3/OC2A/MOSI)"/>
+<wire x1="80.01" y1="-16.51" x2="80.01" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="80.01" y1="17.78" x2="96.52" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="PB5_(SCK/PCINT5)"/>
+<wire x1="96.52" y1="12.7" x2="85.09" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="85.09" y1="12.7" x2="85.09" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="85.09" y1="-55.88" x2="-55.88" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-55.88" x2="-55.88" y2="-19.05" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="SPI1_SCLK"/>
+<wire x1="-55.88" y1="-19.05" x2="-41.91" y2="-19.05" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<wire x1="97.79" y1="-7.62" x2="64.77" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="-7.62" x2="64.77" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="57.15" x2="111.76" y2="57.15" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="SDA"/>
+<wire x1="111.76" y1="57.15" x2="165.1" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="88.9" x2="111.76" y2="57.15" width="0.1524" layer="91"/>
+<junction x="111.76" y="57.15"/>
+<pinref part="U1" gate="G$1" pin="SDA"/>
+<wire x1="154.94" y1="83.82" x2="165.1" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="83.82" x2="165.1" y2="57.15" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="PC5_(ADC5/SCL/PCINT13)"/>
+<wire x1="96.52" y1="-10.16" x2="67.31" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="67.31" y1="-10.16" x2="67.31" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="67.31" y1="54.61" x2="110.49" y2="54.61" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="SCL"/>
+<wire x1="110.49" y1="54.61" x2="167.64" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="86.36" x2="110.49" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="110.49" y1="86.36" x2="110.49" y2="54.61" width="0.1524" layer="91"/>
+<junction x="110.49" y="54.61"/>
+<pinref part="U1" gate="G$1" pin="SCL"/>
+<wire x1="154.94" y1="81.28" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="81.28" x2="167.64" y2="54.61" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="PB1_(PCINT1/OC1A)"/>
+<wire x1="96.52" y1="22.86" x2="57.15" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="57.15" y1="22.86" x2="57.15" y2="-39.37" width="0.1524" layer="91"/>
+<wire x1="57.15" y1="-39.37" x2="195.58" y2="-39.37" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="-39.37" x2="195.58" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="PB2_(PCINT2/SS/OC1B)"/>
+<wire x1="96.52" y1="20.32" x2="59.69" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="59.69" y1="20.32" x2="59.69" y2="-36.83" width="0.1524" layer="91"/>
+<wire x1="59.69" y1="-36.83" x2="193.04" y2="-36.83" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="-36.83" x2="193.04" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
