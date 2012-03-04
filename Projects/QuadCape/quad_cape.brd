@@ -870,6 +870,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-6.35" y1="6.985" x2="-5.715" y2="7.62" width="0.127" layer="21"/>
 </package>
 <package name="TQFP32-08">
+<description>&lt;B&gt;Thin Plasic Quad Flat Package&lt;/B&gt; Grid 0.8 mm</description>
 <wire x1="3.505" y1="3.505" x2="3.505" y2="-3.505" width="0.1524" layer="21"/>
 <wire x1="3.505" y1="-3.505" x2="-3.505" y2="-3.505" width="0.1524" layer="21"/>
 <wire x1="-3.505" y1="-3.505" x2="-3.505" y2="3.15" width="0.1524" layer="21"/>
@@ -1139,10 +1140,7 @@ design rules under a new name.</description>
 <element name="JP2" library="adafruit" package="1X03" value="" x="78.74" y="22.86" rot="R90"/>
 <element name="JP3" library="adafruit" package="1X03" value="" x="78.74" y="33.02" rot="R90"/>
 <element name="JP4" library="adafruit" package="1X03" value="" x="78.74" y="43.18" rot="R90"/>
-<element name="U$2" library="custom" package="TQFP32-08" value="ATMEGA328P-AU" x="63.5" y="29.21" smashed="yes">
-<attribute name="NAME" x="60.7314" y="34.29" size="0.8128" layer="25"/>
-<attribute name="VALUE" x="59.2074" y="22.86" size="0.8128" layer="27"/>
-</element>
+<element name="U$2" library="custom" package="TQFP32-08" value="MEGA328P" x="-6.35" y="5.08"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1150,9 +1148,19 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="48"/>
 <contactref element="U$1" pad="1"/>
 <contactref element="U$1" pad="2"/>
+<contactref element="U3" pad="4"/>
+<contactref element="U3" pad="5"/>
+<contactref element="U$2" pad="21"/>
+<contactref element="U$2" pad="3"/>
+<contactref element="U$2" pad="5"/>
 <wire x1="19.05" y1="50.165" x2="19.05" y2="52.705" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="4.445" x2="19.05" y2="50.165" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="21.11" x2="19.05" y2="50.165" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="21.11" x2="33.02" y2="21.11" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="4.445" x2="33.02" y2="21.11" width="0" layer="19" extent="1-1"/>
 <wire x1="19.05" y1="1.905" x2="19.05" y2="4.445" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.0574" y1="5.48" x2="19.05" y2="4.445" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.6426" y1="4.68" x2="-2.0574" y2="5.48" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.6426" y1="6.28" x2="-10.6426" y2="4.68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD_3V3EXP">
 <contactref element="U$1" pad="49"/>
@@ -1193,59 +1201,57 @@ design rules under a new name.</description>
 </signal>
 <signal name="VCC">
 <contactref element="U3" pad="1"/>
+<contactref element="U3" pad="1"/>
+<contactref element="U$2" pad="4"/>
+<contactref element="U$2" pad="6"/>
+<wire x1="-10.6426" y1="5.48" x2="43.18" y2="21.11" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.6426" y1="3.88" x2="-10.6426" y2="5.48" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND1">
 </signal>
 <signal name="GND2">
 </signal>
-<signal name="GND$1">
-<contactref element="U3" pad="4"/>
-</signal>
-<signal name="GND$2">
-<contactref element="U3" pad="5"/>
-</signal>
 <signal name="N$1">
 <contactref element="U3" pad="3"/>
 <contactref element="U$2" pad="30"/>
-<wire x1="38.1" y1="21.11" x2="62.3" y2="33.5026" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.55" y1="9.3726" x2="38.1" y2="21.11" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="U3" pad="2"/>
 <contactref element="U$2" pad="31"/>
-<wire x1="40.64" y1="21.11" x2="61.5" y2="33.5026" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.35" y1="9.3726" x2="40.64" y2="21.11" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="U$1" pad="75"/>
-<contactref element="U$2" pad="16"/>
-<wire x1="54.61" y1="1.905" x2="66.3" y2="24.9174" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$4">
-<contactref element="U$1" pad="76"/>
-<contactref element="U$2" pad="15"/>
-<wire x1="54.61" y1="4.445" x2="65.5" y2="24.9174" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
-<contactref element="U$2" pad="17"/>
 <contactref element="U$1" pad="77"/>
-<wire x1="57.15" y1="1.905" x2="67.7926" y2="26.41" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
-<contactref element="U$2" pad="28"/>
 <contactref element="U2" pad="23"/>
 <contactref element="U1" pad="14"/>
-<wire x1="63.9" y1="33.5026" x2="65.6" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="62.75" y1="18.51" x2="63.9" y2="33.5026" width="0" layer="19" extent="1-1"/>
+<contactref element="U$2" pad="28"/>
+<wire x1="62.75" y1="18.51" x2="65.6" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.95" y1="9.3726" x2="62.75" y2="18.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="U2" pad="24"/>
 <contactref element="U1" pad="13"/>
+<contactref element="U$2" pad="27"/>
 <wire x1="62.25" y1="18.51" x2="65.5" y2="39.54" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.15" y1="9.3726" x2="62.25" y2="18.51" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$10">
+<signal name="N$4">
 <contactref element="U$2" pad="13"/>
 </signal>
-<signal name="N$5">
+<signal name="N$9">
 <contactref element="U$2" pad="14"/>
+</signal>
+<signal name="N$11">
+<contactref element="U$2" pad="15"/>
+</signal>
+<signal name="N$12">
+<contactref element="U$2" pad="1"/>
 </signal>
 </signals>
 </board>
