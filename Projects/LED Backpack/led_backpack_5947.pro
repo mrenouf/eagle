@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /home/mark/Dropbox/Eagle/Projects/led_backpack_5947.brd
+Job           : /home/mrenouf/eagle/Projects/LED Backpack/led_backpack_5947.brd
 
-Start at      : 20:28:54 (10/31/09)
-End at        : 20:28:54 (10/31/09)
-Elapsed time  : 00:00:00
+Start at      : 21:51:18 (7/10/12)
+End at        : 21:51:24 (7/10/12)
+Elapsed time  : 00:00:06
 
-Signals       :    46   RoutingGrid: 50 mil  Layers: 2
-Connections   :    68   predefined:  17 ( 43 Vias )
+Signals       :    52   RoutingGrid: 8 mil  Layers: 2
+Connections   :    71   predefined:  31 ( 31 Vias )
 
-Router memory :   12996
+Router memory :   386884
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :     Route Optimize1 Optimize2
 
-Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         0         0         0         0         0         0
-max. Level        :         0         0         0         0         0         0
-max. Total        :         0         0         0         0         0         0
+Time per pass     :  00:00:04  00:00:01  00:00:01
+Number of Ripups  :        46         0         0
+max. Level        :         5         0         0
+max. Total        :         6         0         0
 
-Routed            :         0         0         0         0         0         0
-Vias              :         0         0         0         0         0         0
-Resolution        :    25.0 %    25.0 %    25.0 %    25.0 %    25.0 %    25.0 %
+Routed            :        34        40        40
+Vias              :        35        25        25
+Resolution        :    91.5 %   100.0 %   100.0 %
 
-Final             : 25.0% finished
+Final             : 100.0% finished
