@@ -2,14 +2,14 @@ EAGLE AutoRouter Statistics:
 
 Job           : /home/mrenouf/eagle/Projects/QuadCape/quad_cape.brd
 
-Start at      : 19:20:47 (3/4/12)
-End at        : 19:20:47 (3/4/12)
+Start at      : 16:29:51 (7/8/12)
+End at        : 16:29:51 (7/8/12)
 Elapsed time  : 00:00:00
 
 Signals       :    28   RoutingGrid: 39.3701 mil  Layers: 2
-Connections   :    46   predefined:  36 ( 19 Vias )
+Connections   :    48   predefined:  46 ( 25 Vias )
 
-Router memory :   24576
+Router memory :   24320
 
 Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
@@ -19,7 +19,7 @@ max. Level        :         0         0         0         0         0
 max. Total        :         0         0         0         0         0
 
 Routed            :         1         1         1         1         1
-Vias              :         0         0         0         0         0
-Resolution        :    80.4 %    80.4 %    80.4 %    80.4 %    80.4 %
+Vias              :         1         0         0         0         0
+Resolution        :    97.9 %    97.9 %    97.9 %    97.9 %    97.9 %
 
-Final             : 78.3% finished. Polygons may have fallen apart.
+Final             : 100.0% finished
