@@ -282,8 +282,8 @@
 <pin name="VCC" x="-12.7" y="7.62" length="short" direction="pwr"/>
 <pin name="RX" x="-12.7" y="2.54" length="short" direction="in"/>
 <pin name="TX" x="-12.7" y="0" length="short" direction="out"/>
-<pin name="GND$1" x="-12.7" y="-5.08" length="short" direction="pwr"/>
-<pin name="GND$2" x="-12.7" y="-7.62" length="short" direction="pwr"/>
+<pin name="GND@1" x="-12.7" y="-5.08" length="short" direction="pwr"/>
+<pin name="GND@2" x="-12.7" y="-7.62" length="short" direction="pwr"/>
 <text x="-10.16" y="10.668" size="1.778" layer="94">&gt;NAME</text>
 <text x="-10.16" y="-12.192" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
@@ -377,8 +377,8 @@
 <devices>
 <device name="" package="LS20031">
 <connects>
-<connect gate="G$1" pin="GND$1" pad="1"/>
-<connect gate="G$1" pin="GND$2" pad="2"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@2" pad="2"/>
 <connect gate="G$1" pin="RX" pad="3"/>
 <connect gate="G$1" pin="TX" pad="4"/>
 <connect gate="G$1" pin="VCC" pad="5"/>
